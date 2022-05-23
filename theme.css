@@ -1529,7 +1529,7 @@ background-color:var(--b3-font-background7);
 	background-color:var(--b3-list-background);
 }
 .protyle-linenumber__rows{
-	background-color:var(--b3-scroll-bgcolor);
+	background-color:var(--b3-column-surface);
 	padding: 30px 4px 22px 4px;
 }
 .protyle-wysiwyg [data-node-id][fold="1"]:not(.li):not([data-type="NodeHeading"]).code-block{
