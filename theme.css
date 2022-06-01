@@ -1898,7 +1898,6 @@ body > div[data-key] > .b3-dialog > .b3-dialog__container {
 body > div[data-key] > .b3-dialog > .b3-dialog__container > div > .fn__flex > .fn__flex-column {
 	height: 80vh !important;
 	width: 80vw !important;
-	padding-top:1px;
 }
 
 /*ctrl+p改造成左右排列*/
