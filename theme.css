@@ -1898,6 +1898,7 @@ body > div[data-key] > .b3-dialog > .b3-dialog__container {
 body > div[data-key] > .b3-dialog > .b3-dialog__container > div > .fn__flex > .fn__flex-column {
 	height: 80vh !important;
 	width: 80vw !important;
+	padding-top:1px;
 }
 
 /*ctrl+p改造成左右排列*/
@@ -1912,17 +1913,29 @@ body > div[data-key] > .b3-dialog > .b3-dialog__container > div > .fn__flex > .f
 body > div[data-key] > .b3-dialog > .b3-dialog__container > div > .fn__flex > .fn__flex-column>.b3-form__space--small {
 	width: 100vw;
 }
-
 /*窗口宽度大于一定尺寸时候，左右排列*/
 @media screen and (min-width: 960px) {
 	/*搜索结果列表占一半宽度，靠左排列*/
 	body > div[data-key] > .b3-dialog > .b3-dialog__container > div > .fn__flex > .fn__flex-column #searchList {
 		float: left;
 		width: 35vw;
-		height: calc(100% - 85px) !important;
+		height: calc(100% - 135px) !important;
 	}
 	/*结果预览自动占满剩余宽度，高度和结果列表等高*/
 	div[data-key] .b3-dialog__container .fn__flex-column #searchPreview {
+		/*width:45vw;*/
+		height: calc(100% - 136px) !important;
+	}
+}
+@media screen and (min-width: 960px) {
+	/*搜索结果列表占一半宽度，靠左排列*/
+	body > div[data-key] > .b3-dialog > .b3-dialog__container > div > .fn__flex > .fn__flex-column .fn__none~#searchList {
+		float: left;
+		width: 35vw;
+		height: calc(100% - 85px) !important;
+	}
+	/*结果预览自动占满剩余宽度，高度和结果列表等高*/
+	body > div[data-key] > .b3-dialog > .b3-dialog__container > div > .fn__flex > .fn__flex-column .fn__none~#searchPreview {
 		/*width:45vw;*/
 		height: calc(100% - 86px) !important;
 	}
@@ -2079,6 +2092,7 @@ div[data-key='⌘R'] #searchPreview .protyle-content {
 .protyle-attr--refcount{
 	height: 20px;
     width: 20px;
+	left:1px;
     padding: 0;
     line-height: 20px;
 	text-align: center;
@@ -2130,3 +2144,10 @@ div#historyContainer{
     border: var(--b3-border-column);
 }
 /* ——————————————end————————————————————*/
+.b3-typography [data-subtype="graphviz"] svg polygon, .protyle-wysiwyg [data-subtype="graphviz"] svg polygon{
+	fill:var(--b3-theme-white);
+}
+
+.b3-typography [data-subtype="flowchart"] [contenteditable="false"] svg, .protyle-wysiwyg [data-subtype="flowchart"] [contenteditable="false"] svg{
+	background-color:var(--b3-theme-white);
+}
