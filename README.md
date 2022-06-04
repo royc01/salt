@@ -1,5 +1,11 @@
-# salt
+# salt主题
 基于notion主题修改的护眼配色主题，增添一番风味。
+![image.png](https://tva1.sinaimg.cn/large/8ff342a8gy1h2wjjwfqm7j20u01d9wjq.jpg)
+---
+## 0.1.1
+* 更新预览图&简介图
+* 加入自定义配置css文件
+* 修复H1标题后色块
 ## 0.1.0
 * 重构css，使三个主题结构代码一致
 * 清除部分不生效的样式
