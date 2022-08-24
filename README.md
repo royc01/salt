@@ -6,6 +6,8 @@
 * 把主题文件里的`n-topbar.css`文件拷贝到工作空间`data\widgets`目录里面
 * 此方法适用于：notion-theme、notion-dark和salt主题
 ---
+## 0.2.5
+* 修复块标不能点击bug
 ## 0.2.4
 * 在没有emoji的情况下钉住页签显示全部文档名
 * 修复编辑器滚动条层级
